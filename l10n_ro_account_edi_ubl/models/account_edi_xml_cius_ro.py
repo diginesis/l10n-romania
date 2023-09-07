@@ -8,7 +8,7 @@ from odoo import models
 class AccountEdiXmlCIUSRO(models.Model):
     _inherit = "account.edi.xml.ubl_bis3"
     _name = "account.edi.xml.cius_ro"
-    _description = "CIUS RO"
+    _description = "CIUS RO "
 
     def _export_invoice_filename(self, invoice):
         return f"{invoice.name.replace('/', '_')}_cius_ro.xml"
